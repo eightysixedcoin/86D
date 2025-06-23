@@ -1,1 +1,74 @@
+/* ─── VARIABLES & FONTS ─── */
+:root {
+  --red:   #ff0000;
+  --white: #ffffff;
+  --black: #000000;
+  --grey:  #888888;
+}
 
+/* Fallbacks assume you have these installed */
+body {
+  margin: 0;
+  font-family: 'Helvetica LT Std Condensed', Arial, sans-serif;
+  background: var(--black);
+  color: var(--white);
+}
+
+/* ─── SECTION 1: HERO ─── */
+#section1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;                                 /* full viewport */
+  padding: 0 1rem;                               /* gutter on narrow viewports */
+  background: url('../assets/images/section1-bg.jpg') center/cover no-repeat;
+  background-attachment: fixed;                   /* parallax feel, optional */
+  text-align: center;
+  overflow: hidden;
+}
+
+#section1 .content {
+  max-width: 800px;                              /* constrain text width */
+}
+
+#section1 h1 {
+  margin: 0 0 1rem;
+  font-family: 'Impact', sans-serif;
+  font-size: clamp(3rem, 8vw, 6rem);             /* scales between 3–6rem */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+#section1 p {
+  margin: 0 0 2rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: var(--grey);
+  line-height: 1.4;
+  font-family: 'Helvetica LT Std Condensed', Arial, sans-serif;
+}
+
+#section1 .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--red);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: background 0.25s;
+}
+#section1 .btn:hover {
+  background: var(--black);
+  border: 2px solid var(--red);
+}
+
+/* ─── RESPONSIVE TWEAKS ─── */
+@media (max-width: 600px) {
+  #section1 {
+    background-attachment: scroll;               /* disable fixed on mobile for performance */
+  }
+}
