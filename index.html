@@ -1,5 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EightySixed Coin</title>
+
+  <style>
+    /* ─── RESET & BASE ─── */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body { height:100%; }
+    body {
+      font-family: 'Helvetica LT Std Condensed', Arial, sans-serif;
+      background:#000;
+      color:#fff;
+      overflow-x:hidden;
+    }
+
+    /* ─── SECTION 1 HERO ─── */
+    #section1 {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* full viewport height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-image: url('assets/images/section1-bg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    #section1 .content {
+      padding: 0 1rem;
+      max-width: 800px;
+    }
+
+    #section1 h1 {
+      font-family: 'Impact', sans-serif;
+      font-size: clamp(3rem, 8vw, 6rem);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      margin-bottom: 1rem;
+    }
+
+    #section1 p {
+      font-size: clamp(1rem, 3vw, 1.5rem);
+      color: #ccc;
+      line-height: 1.4;
+      margin-bottom: 2rem;
+    }
+
+    #section1 a.btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background:#f00;
+      color:#fff;
+      text-transform: uppercase;
+      letter-spacing:0.05em;
+      font-size:1rem;
+      text-decoration:none;
+      transition: background 0.25s, color 0.25s;
+    }
+    #section1 a.btn:hover {
+      background:#000;
+      color:#f00;
+      border:2px solid #f00;
+    }
+
+    /* Disable fixed bg on mobile for performance */
+    @media (max-width:600px) {
+      #section1 {
+        background-attachment: scroll;
+      }
+    }
+
+  </style>
+</head>
+
 <body>
-  <!-- SECTION 1: HERO -->
+
   <section id="section1">
     <div class="content">
       <h1>EightySixed Coin</h1>
@@ -8,5 +90,5 @@
     </div>
   </section>
 
-  <!-- SECTION 2 … -->
 </body>
+</html>
