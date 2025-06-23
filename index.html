@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>86D Coin</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #ff0000;
+      color: #000;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+      background: linear-gradient(to bottom right, #ff0000 60%, #000 40%);
+    }
+    .brand {
+      font-size: 8vw;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: right;
+      line-height: 0.8;
+      color: #ff0000;
+      background-color: #000;
+      padding: 0.5rem 1rem;
+      align-self: flex-end;
+    }
+    .brand span {
+      display: block;
+      color: #ff0000;
+    }
+    .coin {
+      font-size: 16vw;
+      font-weight: bold;
+      margin: 2rem 0 1rem;
+      text-align: left;
+      color: #000;
+      align-self: flex-start;
+    }
+    .slogan {
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: bold;
+      text-align: left;
+      margin-bottom: 2rem;
+      align-self: flex-start;
+    }
+    .skull {
+      max-width: 50vw;
+      height: auto;
+    }
+    .footer {
+      margin-top: 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #000;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    @media (max-width: 768px) {
+      .coin {
+        font-size: 20vw;
+      }
+      .brand {
+        font-size: 10vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="brand">
+      <span>Eighty</span>
+      SIXED
+      <div style="font-size: 1rem; color: #fff;">coin.com</div>
+    </div>
+    <div class="coin">86D</div>
+    <div class="slogan">“THE COIN THAT KILLS (SUPPLY)”</div>
+    <img src="skull.png" alt="Skull" class="skull" />
+    <div class="footer">
+      <div>Stand Down</div>
+      <div>And Standby</div>
+    </div>
+  </div>
+</body>
+</html>
